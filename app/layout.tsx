@@ -5,6 +5,11 @@ import Navbar from "@/components/layout/navbar"
 import Footer from "@/components/layout/footer"
 import { ThemeProvider } from "@/components/theme-provider"
 import { settings } from "@/config/settings"
+import dynamic from "next/dynamic"
+const AlertBox = dynamic(() => import("@/components/layout/alert-box"), {
+  ssr: true,
+})
+import RecoilRootProvider from "@/components/recoil-root-provider"
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -69,13 +74,17 @@ export default function RootLayout({ children }: RootLayoutProps) {
         className={`${inter.className} flex min-h-screen flex-col bg-background text-primary`}
       >
         {settings.themeToggleEnabled ? (
-          <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-            <Navbar />
-            {children}
-            <Footer />
-          </ThemeProvider>
+          <RecoilRootProvider>
+            <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+              <AlertBox />
+              <Navbar />
+              {children}
+              <Footer />]
+            </ThemeProvider>
+          </RecoilRootProvider>
         ) : (
           <ThemeProvider attribute="class" forcedTheme="light" enableSystem>
+            <AlertBox />
             <Navbar />
             {children}
             <Footer />

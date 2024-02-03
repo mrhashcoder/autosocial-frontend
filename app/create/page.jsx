@@ -9,10 +9,10 @@ export const metadata = {
 function page() {
   return (
     <>
-      <main className="container flex flex-col items-center py-8">
-        <div className="flex flex-col items-center space-y-2 text-center">
+      <main className="container flex flex-col items-center py-6">
+        <div className="items-left flex flex-col space-y-2 text-center sm:items-center">
           <HeadingText subtext="Create Video Content on Click of a Button">
-            Contact
+            Create Video
           </HeadingText>
         </div>
         <VideoDataForm />

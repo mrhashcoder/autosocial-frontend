@@ -2,7 +2,7 @@
 
 Easy to setup, customizable, quick, and responsive landing page starter built with [Next.js](https://nextjs.org) and [shadcn/ui](https://ui.shadcn.com).
 
-- [Live Preview](https://nextlanding.rdev.pro)
+-   [Live Preview](https://nextlanding.rdev.pro)
 
 ## Preview
 
@@ -63,7 +63,6 @@ Modify the content and website configurations in the `/config` folder.
 Modify the layout and routes in the `/app` folder.
 
 Change navigation links by modifying `lib/links.ts` file.
-
 
 ## Deploy on Vercel
 
