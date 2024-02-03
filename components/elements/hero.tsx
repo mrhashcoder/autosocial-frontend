@@ -17,11 +17,11 @@ export default function HeroHeader() {
           </h2>
         </div>
         <Link
-          href="https://github.com/redpangilinan/next-shadcn-landing"
+          href="/create"
           target="_blank"
           className={`w-[10rem] ${cn(buttonVariants({ size: "lg" }))}`}
         >
-          Get started
+          Let`s Create
         </Link>
       </div>
       {heroHeader.image !== "" ? (

@@ -1,4 +1,4 @@
-import ContactForm from "@/components/pages/contact-form"
+import ContactForm from "@/components/elements/contact-form"
 import HeadingText from "@/components/heading-text"
 
 export const metadata = {
