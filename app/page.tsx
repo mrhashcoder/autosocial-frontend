@@ -6,8 +6,6 @@ export default function Home() {
     return (
         <main>
             <Hero />
-            <FeatureCards />
-            <Features />
         </main>
     );
 }
