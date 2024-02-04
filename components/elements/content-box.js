@@ -30,7 +30,7 @@ function ContentBox() {
     return (
         <>
             <div>Size of List : {contentIdList.length}</div>
-            <div className="mt-20 flex flex-wrap items-center justify-between">
+            <div className="m-auto flex flex-wrap items-center justify-center">
                 {contentCardsHTML}
             </div>
         </>
