@@ -34,7 +34,6 @@ const formSchema = z.object({
 
 function VideoDataForm() {
     const [alertStateData, setAlertStateData] = useRecoilState(alertState);
-    const router = useRouter();
 
     const rowCount = 10;
     const form = useForm<z.infer<typeof formSchema>>({
@@ -61,7 +60,6 @@ function VideoDataForm() {
                         onClick: () => console.log("Undo"),
                     },
                 });
-                router.push("/content");
             } else {
                 setAlertStateData({
                     type: "destructive",
